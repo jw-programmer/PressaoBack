@@ -15,7 +15,7 @@ namespace Src.Domain
 
         }
 
-        public PressaoArterial(long id, int pressaoArterialSistolica, int pressaoArterialDiastalica, DateTime dataMedicao) : this(pressaoArterialSistolica, pressaoArterialDiastalica)
+        public PressaoArterial(long id, decimal pressaoArterialSistolica, decimal pressaoArterialDiastalica, DateTime dataMedicao) : this(pressaoArterialSistolica, pressaoArterialDiastalica)
         {
             this.PressaoArterialId = id;
             this.DataMedicao = dataMedicao;
@@ -23,7 +23,7 @@ namespace Src.Domain
 
 
 
-        public PressaoArterial(int pressaoArterialSistolica, int pressaoArterialDiastalica)
+        public PressaoArterial(decimal pressaoArterialSistolica, decimal pressaoArterialDiastalica)
         {
             this.PressaoArterialSistolica = pressaoArterialSistolica;
             this.PressaoArterialDiastalica = pressaoArterialDiastalica;
