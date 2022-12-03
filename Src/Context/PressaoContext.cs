@@ -5,7 +5,7 @@ namespace Src.Context
 {
     public class PressaoContext : DbContext
     {
-        public DbSet<PressaoArterial>? MyProperty { get; set; }
+        public DbSet<PressaoArterial>? PressoesArteriais { get; set; }
         public string DbPath { get; }
 
         public PressaoContext()
